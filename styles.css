@@ -48,7 +48,7 @@ header{
     z-index: 100;
 }
 
-/* nav bar */
+/* nav */
 .nav{
     display: flex;
     align-items: center;
@@ -102,3 +102,51 @@ header{
     background: transparent;
     font-size: 0.938rem;
 }
+
+/* user */
+
+.user{
+    display: flex;
+}
+
+.user-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* navbar */
+.navbar{
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 18px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.1rem;
+}
+
+.nav-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #b7b7b7;
+}
+
+.nav-link:hover,
+.nav-active{
+    color: var(--text-color);
+    transition: 0.3s all linear;
+    transform: scale(1.1);
+}
+
+.nav-link .bx{
+    font-size: 1.6rem;
+}
+
+.nav-link-title{
+    font-size: 0.7rem;
+}
+
