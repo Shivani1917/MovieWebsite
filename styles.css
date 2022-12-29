@@ -195,3 +195,38 @@ header{
     column-gap: 0.8rem;
     color: var(--text-color);
 }
+
+.watch-btn .bx{
+    font-size: 21px;
+    background: var(--main-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.watch-btn .bx:hover{
+    background: var(--hover-color);
+}
+
+.watch-btn span{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* heading */
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--container-color);
+    padding: 8px 14px;
+    border: 1px solid hsl(200 100% 99% / 5%);
+}
+
+.heading-title{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
