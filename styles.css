@@ -173,3 +173,25 @@ header{
     object-fit: cover;
     border-radius: 0.5rem;
 }
+
+.home-text{
+    padding-left: 40px;
+}
+
+.home-title{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.home-text p{
+    font-size: 0.938rem;
+    margin: 10px 0px 20px;
+    color: var(--main-color);
+}
+
+.watch-btn{
+    display: flex;
+    align-items: center;
+    column-gap: 0.8rem;
+    color: var(--text-color);
+}
