@@ -224,6 +224,7 @@ header{
     background: var(--container-color);
     padding: 8px 14px;
     border: 1px solid hsl(200 100% 99% / 5%);
+    margin-bottom: 2rem;
 }
 
 .heading-title{
