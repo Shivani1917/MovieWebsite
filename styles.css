@@ -330,3 +330,8 @@ header{
     background: var(--hover-color);
     transition: 0.3s all linear;
 }
+
+.copyright{
+    text-align: center;
+    padding: 20px;
+}
