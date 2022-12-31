@@ -11,8 +11,8 @@
 :root{
     --main-color:#ffb43a;
     --hover-color: hsl(37, 94%, 57%);
-    --body-color: #1e1e2a;
-    --container-color: #2d2e37;
+    --body-color: #232338;
+    --container-color: #363849;
     --text-color: #fcfeff;
 }
 
@@ -258,7 +258,7 @@ header{
     justify-content: flex-end;
     padding: 14px;
     background: linear-gradient(8deg,
-     hsl(240 17% 14% / 74%) 14%
+     hsl(240 17% 14% / 74%) 14%,
      hsl(240 17% 14% / 14%) 44%);
      overflow: hidden;
 }
@@ -278,7 +278,31 @@ header{
     display: flex;
 }
 
-.swiper-button-next, .swiper-button-prev{
+.swiper-button-next,
+.swiper-button-prev{
     position: static !important;
     margin: 0px 0px 0px 10px !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+    color: var(--text-color);
+    font-size: 18px !important;
+    font-weight: 700;
+}
+
+.play-btn{
+    position: absolute;
+    bottom: 0.8rem;
+    right: 3rem;
+} 
+
+.movies .heading{
+    padding: 10px 14px;
+}
+
+.movies-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(247px,1fr));
+    gap: 1.5rem;
 }
