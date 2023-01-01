@@ -429,11 +429,34 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background: hsl(234 10% 20% / 60%);
     z-index: 400;
 }
+
+.video-container.show-video{
+    display: flex;
+}
+
+.video-box{
+    position: relative;
+    width: 70%;
+}
+
+.video-box #videoo{
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+.close-video{
+    position: absolute;
+    top: -3rem;
+    right: 0;
+    font-size: 40px;
+    color: var(--main-color);
+}
+
