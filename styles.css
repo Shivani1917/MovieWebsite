@@ -479,7 +479,7 @@ header{
 /* about movie */
 
 .about-movie{
-    margin-top: 2rem;
+    margin-top: 2rem !important;
 }
 
 .about-movie h2{
@@ -579,4 +579,46 @@ header{
     }
 }
 
-@media (max-width: 1060px)
+@media (max-width: 1060px){
+    .container{
+        margin: 0 auto;
+        width: 95%;
+    }
+}
+
+@media (max-width: 991px){
+    .movie-box{
+        height: 340px;
+    }
+    .movies-content{
+        grid-template-columns: repeat(auto-fit, minmax(214px, 1fr));
+    }
+}
+
+@media (max-width: 888px){
+    .nav{
+        padding: 14px 0;
+    }
+    .home{
+        min-height: 440px;
+        margin-top: 4rem !important;
+    }
+    .home-text{
+        padding-left: 25px;
+    }
+    .home-title{
+        font-size: 1.6rem;
+        font-weight: 600;
+    }.movie-title{
+        font-size: 1rem;
+    }
+    .play-container{
+        min-height: 440px;
+    }
+    .play-movie{
+        bottom: 14rem;
+    }
+    .cast{
+        justify-content: center;
+    }
+}
