@@ -350,6 +350,7 @@ header{
 .copyright{
     text-align: center;
     padding: 20px;
+    font-size: 2rem;
 }
 
 /* play container */
@@ -582,6 +583,13 @@ header{
 @media (max-width: 1060px){
     .container{
         margin: 0 auto;
+        width: 90%;
+    }
+    .play-movie{
+        bottom: 9rem;
+        right: 4rem;
+    }
+    header{
         width: 95%;
     }
 }
@@ -693,7 +701,8 @@ header{
     }
     .search-box{
         max-width: 100%;
-        width: 100%;
+        width: 95%;
+        justify-content: center;
         border-radius: 4px;
         order: 3;
         grid-column-start: 1;
@@ -701,6 +710,15 @@ header{
     }
     .home{
         margin-top: 7rem !important;
+    }
+    .nav-link-title{
+        display: none;
+    }
+    .nav-link{
+        padding-right: 1rem 1rem;
+    }
+    .navbar{
+        justify-content: space-evenly;
     }
 }
 
@@ -719,7 +737,13 @@ header{
         height: 35px;
     }
     .navbar{
-        justify-content: center;
+        justify-content: space-evenly;
+    }
+    .nav-link .bx{
+        font-size: 1.4rem;
+    }
+    .about-movie p{
+        text-align: justify;
     }
 }
 
