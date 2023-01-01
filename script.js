@@ -50,5 +50,5 @@ var swiper = new Swiper(".popular-content", {
 
   closebtn.onclick = () =>{
     video.classList.remove("show-video");
-    videoo.play();
+    videoo.pause();
   };

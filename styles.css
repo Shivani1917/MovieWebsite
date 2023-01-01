@@ -460,3 +460,20 @@ header{
     color: var(--main-color);
 }
 
+/* about movie */
+
+.about-movie{
+    margin-top: 2rem;
+}
+
+.about-movie h2{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.about-movie p{
+    max-width: 600px;
+    font-size: 0.938px;
+    margin: 10px 0;
+}
