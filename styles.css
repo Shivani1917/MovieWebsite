@@ -20,6 +20,7 @@
 html::-webkit-scrollbar{
     width: 0.5rem;
     background: transparent;
+    overflow-x: hidden;
 }
 
 html::-webkit-scrollbar-thumb{
@@ -146,6 +147,7 @@ header{
     display: flex;
     flex-direction: column;
     row-gap: 2.1rem;
+    overflow-x: hidden;
 }
 
 .nav-link{
@@ -347,12 +349,6 @@ header{
     transition: 0.3s all linear;
 }
 
-.copyright{
-    text-align: center;
-    padding: 20px;
-    font-size: 2rem;
-}
-
 /* play container */
 .play-container{
     position: relative;
@@ -519,10 +515,11 @@ header{
 /* download */
 
 .download{
-    max-width: 800px;
-    width: 1005px;
+    max-width: 100%;
+    width: 100%;
     margin: auto;
     display: grid;
+    grid-template-rows: auto auto auto;
     justify-content: center;
     margin-top: 2rem;
 }
@@ -536,9 +533,12 @@ header{
 }
 
 .download-links{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 10px;
+    /* display: grid;
+    grid-template-columns: repeat(3,1fr);*/
+    gap: 10px; 
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
     margin-bottom: 2rem;
 }
 
@@ -553,6 +553,10 @@ header{
 
 .download-links a:hover{
     background: var(--hover-color);
+}
+
+.next-page{
+    margin-bottom: 5rem;
 }
 
 /* responsive */
@@ -575,14 +579,11 @@ header{
     .nav-link .bx{
         font-size: 1.5rem;
     }
-    .copyright{
-        margin-bottom: 4rem;
-    }
 }
 
 @media (max-width: 1060px){
     .container{
-        margin: 0 auto;
+        margin: auto auto;
         width: 90%;
     }
     .play-movie{
@@ -590,7 +591,7 @@ header{
         right: 4rem;
     }
     header{
-        width: 95%;
+        width: 100%;
     }
 }
 
@@ -615,9 +616,10 @@ header{
         padding-left: 25px;
     }
     .home-title{
-        font-size: 1.6rem;
+        font-size: 1.5rem;
         font-weight: 600;
-    }.movie-title{
+    }
+    .movie-title{
         font-size: 1rem;
     }
     .play-container{
@@ -725,6 +727,27 @@ header{
 /* mobile */
 
 @media (max-width: 370px){
+    .container {
+        margin: auto auto;
+        width: 80%;
+    }
+    /* .download-links {
+        display: grid;
+        grid-template-rows: repeat(3,1fr);
+        gap: 10px;
+        margin-bottom: 2rem;
+    } */
+    .play-text h2{
+        font-size: 1rem;
+    }
+    .home-title{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+.watch-btn span {
+    font-size: 1rem;
+    font-weight: 400;
+}
     .home{
         min-height: 300px;
     }
