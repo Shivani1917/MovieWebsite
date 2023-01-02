@@ -25,12 +25,17 @@ html::-webkit-scrollbar{
 
 html::-webkit-scrollbar-thumb{
     background: var(--main-color);
+    overflow-x: hidden;
 }
 
 /* selection color */
 ::selection{
     background: var(--main-color);
     color: var(--text-color);
+}
+
+html{
+    overflow-x: hidden;
 }
 
 a{
@@ -539,7 +544,7 @@ header{
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
 }
 
 .download-links a{
