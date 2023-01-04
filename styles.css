@@ -736,14 +736,8 @@ header{
         margin: auto auto;
         width: 80%;
     }
-    /* .download-links {
-        display: grid;
-        grid-template-rows: repeat(3,1fr);
-        gap: 10px;
-        margin-bottom: 2rem;
-    } */
     .play-text h2{
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     .home-title{
         font-size: 1rem;
@@ -774,4 +768,3 @@ header{
         text-align: justify;
     }
 }
-
